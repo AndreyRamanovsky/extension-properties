@@ -1,0 +1,2 @@
+test-properties:
+  shared: "WAS overridden by the shared properties in extension repo"

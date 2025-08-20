@@ -1,0 +1,4 @@
+SHORT_ENV: local
+
+test-properties:
+  environment: "WAS Determined by the env - LOCAL"

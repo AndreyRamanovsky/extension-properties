@@ -1,0 +1,4 @@
+SHORT_ENV: uat
+
+test-properties:
+  environment: "WAS Determined by the env - UAT"

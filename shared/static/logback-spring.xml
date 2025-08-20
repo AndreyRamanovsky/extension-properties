@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <springProfile name="default | local | test">
+        <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+        <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+    </springProfile>
+
+    <!--Spring Boot-->
+    <logger name="org.springframework.aop" level="DEBUG"/>
+
+    <!--Spring core-->
+    <logger name="org.springframework.core" level="DEBUG"/>
+
+    <!--HTTP requests-->
+    <logger name="org.apache.http" level="DEBUG"/>
+
+    <springProfile name="dev | sbx | stg | uat | prd">
+        <root level="INFO">
+            <appender-ref ref="ASYNC"/>
+        </root>
+    </springProfile>
+    <springProfile name="default | local | test">
+        <root level="INFO">
+            <appender-ref ref="CONSOLE"/>
+        </root>
+    </springProfile>
+
+</configuration>
