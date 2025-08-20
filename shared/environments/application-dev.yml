@@ -1,5 +1,5 @@
 SHORT_ENV: dev
 
 test-properties:
-  environment: "WAS Determined by the env - DEV"
+  environment: "WAS Determined by the env - DEV in extension test-branch"
 
