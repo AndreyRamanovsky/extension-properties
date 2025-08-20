@@ -1,4 +1,3 @@
-spring.profiles.include: game
 
 test-properties:
   service-extension: "WAS overridden by the extension properties"
