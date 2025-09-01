@@ -1,2 +1,22 @@
 test-properties:
   service-extension: "WAS overridden by the extension properties"
+  strings:
+    - four
+    - five
+  inner-classes:
+    - name: "name two"
+      description: "two overridden in extension"
+    - name: "name three"
+      description: "description three"
+    - name: "name four"
+      description: "description four"
+  inner-class-map:
+    string-two:
+      name: "two overridden in extension"
+      description: "two overridden in extension"
+    string-three:
+      name: "name three"
+      description: "description three"
+    string-four:
+      name: "name four"
+      description: "description four"
